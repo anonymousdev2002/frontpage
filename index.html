@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" contain="width=device-width", initial-scale="1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <title></title>
+    <style>
+
+    .backgroundvideo{
+    position:absolute;
+    top: 0%;
+    right: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    object-fit: cover;
+    }
+        .button{
+            position: relative;
+            display: flex;
+            margin: 0 auto;
+            border: 1px solid white;
+            font-size: 20px;
+            line-height: 45px;
+            font-weight: bold;
+            background-color: #7EC8E3;
+            
+        
+            
+        }
+        button:hover{
+        cursor: pointer;
+        }
+        .sidebar button{
+            height: 40px;
+            width: 250px;
+            left: 0%;
+            background-color: #7EC8E3;
+        }
+.innertext{
+    max-width: 40ch;
+    text-align: center;
+    transform: scale(0.94);
+    animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: white;
+    font-size: 30px;
+    align-items: center;
+    align-content: center;
+    margin: auto;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    padding-top: 6%;
+}
+@keyframes scale {
+    100% {
+transform: scale(1);
+    }
+}
+span {
+    display: inline-block;
+    opacity: 0;
+    filter: blur(4px);
+}
+
+span:nth-child(1) {
+    animation: fade-in 1.9s 0.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(2) {
+    animation: fade-in 4.9s 0.2s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(3) {
+    animation: fade-in 5.9s 0.3s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+    @keyframes fade-in {
+    100% {
+    opacity: 1;
+    filter: blur(0);
+    }
+}
+.sidebarToggle{
+    position: fixed;
+    top: 0.6%;
+    left: 0.1%;
+    background-color: #7EC8E3;
+
+
+}
+
+.sidebar{
+    position: fixed;
+    top: 0%;
+    color: black;
+    left: 0%;
+    width: 250px;
+    background-color: black;
+    height: 100vh;
+    transform: translate(-100%)
+    
+    
+}
+.sidebar{
+    transition: 1.3s;
+}
+.show-sidebar{
+    transform: translate(0)
+
+}
+.show-sidebar{
+    transition: 1s;
+}
+
+ul{
+    padding-top: 20%;
+    list-style-type: none;
+    display: grid;
+    grid-template-rows: auto 1fr auto ;
+    row-gap: 50px;
+    padding-left: 0%;
+}
+li{
+   
+    cursor: pointer;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+
+}
+li:hover{
+    background-color: #c4f9cc;
+
+}
+button:hover{
+    background-color: #c4f9cc;
+}
+.close{
+    position: fixed;
+    top: 0.1%;
+    background-color: #7EC8E3;
+    transform: translate(-250px)
+    
+}
+.close{
+    transition: 1.4s;
+}
+.show-close{
+
+transform: translate(240px)
+}
+.show-close{
+    transition: 1.3s;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.contact{
+    position: fixed;
+    right: 0.3%;
+    top: 0.2%;
+    line-height: 30px;
+    font-weight: bold;
+    background-color: #7EC8E3;
+    font-size: 18px;
+    border: 1px solid rgb(15, 33, 33);
+}
+
+
+
+@media screen and (max-width: 600px)
+{
+    h1{
+        font-size: 50px;
+    }
+    .sidebar{
+        width: 150px;
+    }
+    .close{
+    size: 4px;
+    position: fixed;
+    top: 0.1%;
+    background-color: #7EC8E3;
+    transform: translate(-150px)
+    }
+    .show-close{
+
+transform: translate(140px)
+}
+    .sidebar button{
+            height: 40px;
+            width: 150px;
+            left: 0%;
+            background-color: #7EC8E3;
+            line-height: 40px;
+        }
+        li{
+            height: 40px;
+            width: 153px;
+            left: 0%;
+            background-color: transparent;
+            line-height: 40px;
+        }
+        
+        ul{
+    padding-top: 50%;
+    list-style-type: none;
+    display: grid;
+    grid-template-rows: auto 1fr auto ;
+    row-gap: 40px;
+    padding-left: 0%;
+}
+.sidebar button{
+    position: relative;
+            display: flex;
+            margin: 0 auto;
+            border: 1px solid white;
+            font-size: 10px;
+            line-height: 45px;
+            font-weight: bold;
+            background-color: #7EC8E3;
+            }
+    #rotten{
+        font-size: 9px;
+    }
+    li:hover{
+        background-color: transparent;
+    }
+.contact{
+    position: fixed;
+    right: 0.3%;
+    top: 0.2%;
+    line-height: 25px;
+    font-weight: bold;
+    background-color: #7EC8E3;
+    font-size: 20px;
+    border: 1px solid rgb(15, 33, 33);
+}
+.sidebarToggle{
+    position: fixed;
+    top: 0.6%;
+    left: 0.1%;
+    background-color: #7EC8E3;
+    }
+    .button{
+            position: relative;
+            display: flex;
+            margin: 0 auto;
+            border: 1px solid white;
+            font-size: 20px;
+            line-height: 45px;
+            font-weight: bold;
+            background-color: #7EC8E3;
+            
+        
+            
+        }
+        li:hover{
+    background-color: #7EC8E3;
+}
+}
+
+
+
+
+
+    </style>
+</head>
+<body>
+    <div class="backgroundvideo">
+        <video autoplay loop muted src="https://assets.mixkit.co/videos/46351/46351-720.mp4"></video>
+    </div>
+    <div class="text">
+        <div class="innertext">
+            <span><h1>WELCOME TO THE WORLD OF CINEMA</h1></span>
+            <span><h3>WHERE DREAMS BECOME REALITY</h3></span>
+            <span><button class="button"onClick="parent.location='genres.html'"
+            >CLICK TO ENTER</button></span>
+        </div>
+    </div>
+    <div>
+        <button class="sidebarToggle"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAAXNSR0IArs4c6QAAAIpJREFUWEft1UEOgCAMRFG4Q/W8nld7B93oDvJjGpI2GbdNSX0M0Fuyryebp2kg2hEJSYgEqF4nQ5vZTX8TqV/uQ4ypkAZ6uetkKJKPSK+ESG8qtJsd1Bypn+7D9XXsP9XfF2O6LYvkI9KrY096dYT02tNrn06IwreqXifUqwRoXQlJiASorgyR0APn2SglHVWD+gAAAABJRU5ErkJggg=="/></button>
+    </div>
+    <div>
+        <button class="close"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAAXNSR0IArs4c6QAAAbZJREFUWEftlk0rR1EQhx/ZSnwLxYKFleT1CyhiQ4kvYMuerS9AFDb4BiJZ2dgosVIWJC+lbL3cqXPqdMy5c7t//t1yz/KeOXOe+5s5M9NCxVZLxXiogayI1Ar9O4Uk5CPAsfXnQA/wALzk2TaSQ3J2C5gDloD1nIu6gTPgGRgG7lO2ZYFCGO97FVhRLvIwnW7vzkHdalBlgOTMBjCvOJwEDoPvvcBJpl5HZHsDdP0GkKaM97sJLAJf7oPASG55Zbzdq1PoslEggdkDZhRHGswp0B7Z5sKIbdGQ5cHsArORMhrMGzAIqMp48CJArcBOQhmBkVf26Rz2A0eKMgIzClxY5cECEph9YEJxpMFIzrRFtoVhrJDlwRwA05EyGsx79sqGiihjhcyCkcT+CMKUghkHzq0whfupkFUOSKAtqKaGzKtYqaQOoSrz7MPkT1XpphfGIlBNbx1FoRaiTp/qZwNZ5b9utLmGUNuuf8U+p7LJUIqmX32u48fjx1XWAWRO+rGs1pGqadoYsgYsKwf+fEALlarMCBtCjbkOb3UIGfIfgac8w7Ihsy4vvV8DWdLVCtUKWQpY+98HaXUla41LJgAAAABJRU5ErkJggg=="/></button>
+    </div>
+    <div>
+        <button class="contact">CONTACT</button>
+    </div>
+    <div class="sidebar">
+        <ul>
+        <button onClick="parent.location='https://www.imdb.com/chart/top/'"  > <li  > IMDb Top 250 Movies</li></button>
+        <button id="rotten" onClick="parent.location='https://editorial.rottentomatoes.com/guide/best-movies-of-all-time/'" > <li> Best Rotten Tomatoes movies</li></button>
+        <button onClick="parent.location='https://www.imdb.com/india/top-rated-indian-movies/'" >  <li>Top Rated Indian Movies</li></button>
+        <button onClick="parent.location='https://www.imdb.com/list/ls042966798/'"  > <li>  Popular Korean Movies</li></button>
+        <button  onClick="parent.location='https://in.bookmyshow.com/'" > <li>  Book Your Tickets</li>
+        
+        </ul>
+    
+
+
+    </div>
+
+
+
+
+
+</body>
+<script>
+    const togglebtn = document.querySelector(".sidebarToggle");
+    const closebtn = document.querySelector(".close");
+    const sidebar = document.querySelector(".sidebar");
+    
+
+    togglebtn.addEventListener("click",function(){
+        sidebar.classList.add("show-sidebar");
+    });
+    togglebtn.addEventListener("click",function(){
+        closebtn.classList.add("show-close");
+    });
+    closebtn.addEventListener("click",function(){
+        sidebar.classList.remove("show-sidebar");
+    });
+    closebtn.addEventListener("click",function(){
+        closebtn.classList.remove("show-close");
+    });
+
+
+</script>
+</html>
